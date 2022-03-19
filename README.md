@@ -31,5 +31,6 @@ npm run build
 ## Further features
 
 - Implementing signup and login feature for users
+- Unit tests can be added in all the components
 - Providing responsive design feature for mobile, ipad etc.
 - SSR can be integrated in the project for the google BOT to make SEO friendly
