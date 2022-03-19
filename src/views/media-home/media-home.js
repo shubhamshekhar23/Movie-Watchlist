@@ -1,22 +1,14 @@
+import SearchFilter from "@/components/search-filter";
+import MediaList from "@/components/media-list";
 
 export default {
-  name: 'media-home',
-  components: {},
+  name: "media-home",
+  components: { MediaList, SearchFilter },
   props: [],
-  data () {
-    return {
-
-    }
+  data() {
+    return {};
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
-}
-
-
+  computed: {},
+  mounted() {},
+  methods: {},
+};

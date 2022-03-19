@@ -1,13 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import MediaHome from "@/views/media-home";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    name: "media-home",
+    component: MediaHome,
   },
 ];
 
