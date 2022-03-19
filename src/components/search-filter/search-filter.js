@@ -1,22 +1,15 @@
-
 export default {
-  name: 'search-filter',
+  name: "search-filter",
   components: {},
   props: [],
-  data () {
+  data() {
     return {
-
-    }
+      items: ["All", "Movies", "Tv-Series"],
+      mediaSearchInput: "",
+      mediaType: "All",
+    };
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
-}
-
-
+  computed: {},
+  mounted() {},
+  methods: {},
+};

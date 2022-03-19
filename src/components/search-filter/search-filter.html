@@ -1,5 +1,21 @@
-
 <section class="search-filter">
-  <h1>search-filter Component</h1>
+  <div class="flex-container">
+    <v-select
+      class="select-media-type"
+      :items="items"
+      label="Solo field"
+      v-model="mediaType"
+      solo
+    ></v-select>
+    <v-text-field
+      class="search-input"
+      label="Search Movies, Tv Shows"
+      solo
+      v-model="mediaSearchInput"
+      @keydown.enter="searchMedia"
+    ></v-text-field>
+    <v-btn @click="searchMedia()" color="grey" icon class="search-btn">
+      <v-icon>mdi-magnify</v-icon>
+    </v-btn>
+  </div>
 </section>
-
