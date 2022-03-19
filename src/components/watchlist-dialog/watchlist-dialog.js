@@ -1,22 +1,17 @@
-
 export default {
-  name: 'watchlist-dialog',
+  name: "watchlist-dialog",
   components: {},
   props: [],
-  data () {
+  data() {
     return {
-
-    }
+      dialog: false,
+    };
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
+  computed: {},
+  mounted() {},
   methods: {
-
-  }
-}
-
-
+    open() {
+      this.dialog = true;
+    },
+  },
+};
