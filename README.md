@@ -1,29 +1,35 @@
 # media-watchlist
 
 ## Project setup
+
 ```
-npm install
+Run npm install after cloning the repo or extracting from zip files
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+npm run serve - this will run a localserver at the port 8080
 ```
 
 ### Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+## Project Info
 
-### Lints and fixes files
-```
-npm run lint
-```
+- This project uses Vue 2 and has been created using Vue CLI, with PWA, unit testing, es linting enabled
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vue components skeletons have been created using vue-generate-component package, It can be installed globally and using command "vgc component_name", will create test file along with .vue, .js and .scss.
+
+- this project also uses Vuetify - A Matrial design framework, and uses some components from it
+
+- Formatting is enabled as soon as a file is saved, so that all the changes are in same format
+
+## Further features
+
+- Implementing signup and login feature for users
+- Providing responsive design feature for mobile, ipad etc.
+- SSR can be integrated in the project for the google BOT to make SEO friendly
