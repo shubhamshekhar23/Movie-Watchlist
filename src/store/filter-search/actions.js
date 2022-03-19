@@ -8,10 +8,12 @@ async function allMediaSearchAction(
   payload
 ) {
   try {
+    commit("global/updateLoading", true, { root: true });
     const { data } = await axios.get(
       `${BASE_URL}/Search/${API_KEY}/${payload}`
     );
     commit("global/updateMediaSearchResult", data.results, { root: true });
+    commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
 
@@ -20,10 +22,12 @@ async function movieSearchAction(
   payload
 ) {
   try {
+    commit("global/updateLoading", true, { root: true });
     const { data } = await axios.get(
       `${BASE_URL}/SearchMovie/${API_KEY}/${payload}`
     );
     commit("global/updateMediaSearchResult", data.results, { root: true });
+    commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
 
@@ -32,10 +36,12 @@ async function tvSeriesSearchAction(
   payload
 ) {
   try {
+    commit("global/updateLoading", true, { root: true });
     const { data } = await axios.get(
       `${BASE_URL}/SearchSeries/${API_KEY}/${payload}`
     );
     commit("global/updateMediaSearchResult", data.results, { root: true });
+    commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
 
@@ -44,6 +50,7 @@ async function sortByRatingAction(
   payload
 ) {
   try {
+    commit("global/updateLoading", true, { root: true });
     let ratingAPIPromiseArray = payload.map((item) =>
       axios.get(`${BASE_URL}/Ratings/${API_KEY}/${item.id}`)
     );
@@ -54,6 +61,7 @@ async function sortByRatingAction(
     });
 
     commit("global/updateMediaListByRating", idRatingMap, { root: true });
+    commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
 

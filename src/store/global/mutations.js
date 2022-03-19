@@ -20,9 +20,14 @@ function updateMediaListByRating(state, data) {
   });
 }
 
+function updateLoading(state, data) {
+  state.isLoader = data;
+}
+
 export default {
   updateMediaSearchResult,
   addToWatchList,
   removeFromWatchList,
   updateMediaListByRating,
+  updateLoading,
 };
