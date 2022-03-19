@@ -1,5 +1,8 @@
 <section class="media-list">
-  <div v-for="item in mediaList">
+  <div v-if="isMediaListEmpty" class="no-search-done">
+    <h4>No Movies and Tv-Series to show, Try searching</h4>
+  </div>
+  <div v-else v-for="item in mediaList">
     <media-card :mediaInfo="item"></media-card>
   </div>
 </section>

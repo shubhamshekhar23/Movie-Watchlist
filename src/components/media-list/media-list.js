@@ -10,6 +10,9 @@ export default {
   },
   computed: {
     ...mapGetters("global", ["global", "mediaList"]),
+    isMediaListEmpty() {
+      return this.mediaList && this.mediaList.length == 0;
+    },
   },
   mounted() {},
   methods: {},
