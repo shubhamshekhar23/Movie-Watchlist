@@ -1,6 +1,7 @@
 <section class="watch-media-list">
   <h2>My Selected Watch List</h2>
-  <div v-for="item in watchList">
+  <p v-if="isWatchListEmpty">No Movies or Tv-Series selected, Try adding</p>
+  <div v-else v-for="item in watchList">
     <media-card :mediaInfo="item"></media-card>
   </div>
 </section>

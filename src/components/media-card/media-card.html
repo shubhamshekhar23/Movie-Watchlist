@@ -12,7 +12,17 @@
 
     <v-card-actions>
       <v-btn
+        v-if="isAlreadyInWatchlist"
+        @click="doWatchListOrRemove()"
         color="pink"
+        icon
+      >
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+      <v-btn
+        v-else
+        @click="doWatchListOrRemove()"
+        color="grey"
         icon
       >
         <v-icon>mdi-heart</v-icon>
