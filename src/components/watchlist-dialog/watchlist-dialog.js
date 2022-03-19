@@ -1,6 +1,8 @@
+import WatchMediaList from "../watch-media-list";
+
 export default {
   name: "watchlist-dialog",
-  components: {},
+  components: { WatchMediaList },
   props: [],
   data() {
     return {
