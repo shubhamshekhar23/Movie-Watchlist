@@ -28,9 +28,17 @@ npm run build
 
 - Formatting is enabled as soon as a file is saved, so that all the changes are in same format
 
+## Project features
+
+- Search field where user can select All, movies or Tv-series
+- After getting the result, user can sort using IMDB rating
+- User can add a particular movie in his watch list using heart Icon
+- After clicking on the my watch list button, user can see all of his watchlist in the dialogbox
+
 ## Further features
 
 - Implementing signup and login feature for users
+- Pagination or infinite scroll can be implemented for the watchlist items in the dialog box
 - Unit tests can be added in all the components
 - Providing responsive design feature for mobile, ipad etc.
 - SSR can be integrated in the project for the google BOT to make SEO friendly
