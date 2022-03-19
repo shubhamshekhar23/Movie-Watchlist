@@ -1,17 +1,15 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import global from "./global";
+import filterSearch from "./filter-search";
+import Vuex from "vuex";
+import Vue from "vue";
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
-})
+export default () => {
+  return new Vuex.Store({
+    modules: {
+      global,
+      filterSearch,
+    },
+  });
+};
