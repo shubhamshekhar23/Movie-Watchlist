@@ -18,4 +18,13 @@
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
   </div>
+  <v-btn
+    class="sort-rating-btn"
+    outlined
+    color="indigo"
+    @click="sortByRating()"
+    :disabled="isMediaListEmpty"
+  >
+    Sort by Ratings
+  </v-btn>
 </section>

@@ -13,6 +13,9 @@ export default {
   },
   computed: {
     ...mapGetters("global", ["global", "mediaList"]),
+    isMediaListEmpty() {
+      return this.mediaList && this.mediaList.length == 0;
+    },
   },
   mounted() {},
   methods: {
@@ -20,6 +23,7 @@ export default {
       "allMediaSearchAction",
       "movieSearchAction",
       "tvSeriesSearchAction",
+      "sortByRatingAction",
     ]),
     searchMedia() {
       switch (this.mediaType) {
@@ -34,6 +38,11 @@ export default {
           break;
         default:
           break;
+      }
+    },
+    sortByRating() {
+      if (!this.isMediaListEmpty) {
+        this.sortByRatingAction(this.mediaList);
       }
     },
   },

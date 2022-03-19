@@ -39,8 +39,27 @@ async function tvSeriesSearchAction(
   } catch (error) {}
 }
 
+async function sortByRatingAction(
+  { commit, getters, dispatch, rootState },
+  payload
+) {
+  try {
+    let ratingAPIPromiseArray = payload.map((item) =>
+      axios.get(`${BASE_URL}/Ratings/${API_KEY}/${item.id}`)
+    );
+    let response = await Promise.all(ratingAPIPromiseArray);
+    const idRatingMap = {};
+    response.forEach((res) => {
+      idRatingMap[res.data.imDbId] = res.data.imDb;
+    });
+
+    commit("global/updateMediaListByRating", idRatingMap, { root: true });
+  } catch (error) {}
+}
+
 export default {
   allMediaSearchAction,
   movieSearchAction,
   tvSeriesSearchAction,
+  sortByRatingAction,
 };
