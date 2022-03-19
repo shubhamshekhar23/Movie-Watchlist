@@ -10,5 +10,9 @@ export default {
   },
   computed: {},
   mounted() {},
-  methods: {},
+  methods: {
+    showMyWatchList() {
+      console.log("shw my watchlist clicked");
+    },
+  },
 };

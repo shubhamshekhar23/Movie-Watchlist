@@ -11,5 +11,9 @@ export default {
   },
   computed: {},
   mounted() {},
-  methods: {},
+  methods: {
+    searchMedia() {
+      console.log("search media initiated");
+    },
+  },
 };
