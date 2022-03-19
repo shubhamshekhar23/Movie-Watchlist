@@ -1,3 +1,5 @@
+import { mapGetters, mapMutations, mapActions } from "vuex";
+
 export default {
   name: "search-filter",
   components: {},
@@ -9,10 +11,14 @@ export default {
       mediaType: "All",
     };
   },
-  computed: {},
+  computed: {
+    ...mapGetters("global", ["global", "mediaList"]),
+  },
   mounted() {},
   methods: {
+    ...mapActions("filterSearch", ["allMediaSearchAction"]),
     searchMedia() {
+      this.allMediaSearchAction(this.mediaSearchInput);
       console.log("search media initiated");
     },
   },
