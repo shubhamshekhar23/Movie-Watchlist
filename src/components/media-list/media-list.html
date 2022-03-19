@@ -1,5 +1,5 @@
-
 <section class="media-list">
-  <h1>media-list Component</h1>
+  <div v-for="item in mediaList">
+    <media-card :mediaInfo="item"></media-card>
+  </div>
 </section>
-

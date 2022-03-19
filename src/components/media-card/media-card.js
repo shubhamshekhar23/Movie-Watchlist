@@ -1,22 +1,11 @@
-
 export default {
-  name: 'media-card',
+  name: "media-card",
   components: {},
-  props: [],
-  data () {
-    return {
-
-    }
+  props: ["mediaInfo"],
+  data() {
+    return {};
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
-}
-
-
+  computed: {},
+  mounted() {},
+  methods: {},
+};
