@@ -15,6 +15,32 @@ async function allMediaSearchAction(
   } catch (error) {}
 }
 
+async function movieSearchAction(
+  { commit, getters, dispatch, rootState },
+  payload
+) {
+  try {
+    const { data } = await axios.get(
+      `${BASE_URL}/SearchMovie/${API_KEY}/${payload}`
+    );
+    commit("global/updateMediaSearchResult", data.results, { root: true });
+  } catch (error) {}
+}
+
+async function tvSeriesSearchAction(
+  { commit, getters, dispatch, rootState },
+  payload
+) {
+  try {
+    const { data } = await axios.get(
+      `${BASE_URL}/SearchSeries/${API_KEY}/${payload}`
+    );
+    commit("global/updateMediaSearchResult", data.results, { root: true });
+  } catch (error) {}
+}
+
 export default {
   allMediaSearchAction,
+  movieSearchAction,
+  tvSeriesSearchAction,
 };
