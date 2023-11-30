@@ -14,9 +14,9 @@ function removeFromWatchList(state, data) {
   state.watchList.splice(index, 1);
 }
 
-function updateMediaListByRating(state, data) {
+function updateMediaListByYear(state, data) {
   state.mediaSearchResult.sort(function (a, b) {
-    return data[a.id] > data[b.id] ? -1 : 1;
+    return a.year > b.year ? -1 : 1;
   });
 }
 
@@ -28,6 +28,6 @@ export default {
   updateMediaSearchResult,
   addToWatchList,
   removeFromWatchList,
-  updateMediaListByRating,
   updateLoading,
+  updateMediaListByYear,
 };

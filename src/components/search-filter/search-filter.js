@@ -24,6 +24,7 @@ export default {
       "movieSearchAction",
       "tvSeriesSearchAction",
       "sortByRatingAction",
+      "sortByYearAction",
     ]),
     searchMedia() {
       switch (this.mediaType) {
@@ -40,9 +41,9 @@ export default {
           break;
       }
     },
-    sortByRating() {
+    sortByYear() {
       if (!this.isMediaListEmpty) {
-        this.sortByRatingAction(this.mediaList);
+        this.sortByYearAction(this.mediaList);
       }
     },
   },

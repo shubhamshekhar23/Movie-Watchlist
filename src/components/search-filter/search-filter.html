@@ -1,12 +1,13 @@
 <section class="search-filter">
   <div class="flex-container">
-    <v-select
+    <!-- disabling below as imdp api is deprecated -->
+    <!-- <v-select
       class="select-media-type"
       :items="items"
       label="Solo field"
       v-model="mediaType"
       solo
-    ></v-select>
+    ></v-select> -->
     <v-text-field
       class="search-input"
       label="Search Movies, Tv Shows"
@@ -18,7 +19,8 @@
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
   </div>
-  <v-btn
+  <!-- disabling below as api doesnt support -->
+  <!-- <v-btn
     class="sort-rating-btn"
     outlined
     color="indigo"
@@ -26,5 +28,14 @@
     :disabled="isMediaListEmpty"
   >
     Sort by Ratings
+  </v-btn> -->
+  <v-btn
+    class="sort-rating-btn"
+    outlined
+    color="indigo"
+    @click="sortByYear()"
+    :disabled="isMediaListEmpty"
+  >
+    Sort by Year
   </v-btn>
 </section>

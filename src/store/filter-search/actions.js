@@ -1,7 +1,12 @@
 import axios from "axios";
 
-const BASE_URL = "https://imdb-api.com/API";
-const API_KEY = "k_04qkat7e";
+const api = axios.create({
+  baseURL: "https://imdb188.p.rapidapi.com/api/v1",
+  headers: {
+    "X-RapidAPI-Key": "b7e4922534msh7e0f3fda35ed8d2p117c96jsne62abd3ebb0c",
+    "X-RapidAPI-Host": "imdb188.p.rapidapi.com",
+  },
+});
 
 async function allMediaSearchAction(
   { commit, getters, dispatch, rootState },
@@ -9,10 +14,10 @@ async function allMediaSearchAction(
 ) {
   try {
     commit("global/updateLoading", true, { root: true });
-    const { data } = await axios.get(
-      `${BASE_URL}/Search/${API_KEY}/${payload}`
-    );
-    commit("global/updateMediaSearchResult", data.results, { root: true });
+    const { data } = await api.get("/searchIMDB", {
+      params: { query: payload },
+    });
+    commit("global/updateMediaSearchResult", data.data, { root: true });
     commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
@@ -45,22 +50,13 @@ async function tvSeriesSearchAction(
   } catch (error) {}
 }
 
-async function sortByRatingAction(
+async function sortByYearAction(
   { commit, getters, dispatch, rootState },
   payload
 ) {
   try {
     commit("global/updateLoading", true, { root: true });
-    let ratingAPIPromiseArray = payload.map((item) =>
-      axios.get(`${BASE_URL}/Ratings/${API_KEY}/${item.id}`)
-    );
-    let response = await Promise.all(ratingAPIPromiseArray);
-    const idRatingMap = {};
-    response.forEach((res) => {
-      idRatingMap[res.data.imDbId] = res.data.imDb;
-    });
-
-    commit("global/updateMediaListByRating", idRatingMap, { root: true });
+    commit("global/updateMediaListByYear", {}, { root: true });
     commit("global/updateLoading", false, { root: true });
   } catch (error) {}
 }
@@ -69,5 +65,5 @@ export default {
   allMediaSearchAction,
   movieSearchAction,
   tvSeriesSearchAction,
-  sortByRatingAction,
+  sortByYearAction,
 };

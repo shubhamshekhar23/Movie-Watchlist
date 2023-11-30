@@ -22,6 +22,8 @@ npm run build
 
 - This project uses Vue 2 and has been created using Vue CLI, with PWA, unit testing, es linting enabled
 
+- It uses `https://rapidapi.com/DataCrawler/api/imdb188/` to make api calls
+
 - Vue components skeletons have been created using vue-generate-component package, It can be installed globally and using command "vgc component_name", will create test file along with .vue, .js and .scss.
 
 - this project also uses Vuetify - A Matrial design framework, and uses some components from it

@@ -1,6 +1,14 @@
 .media-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .no-search-done {
     display: flex;
     justify-content: center;
+    width: 100%;
+  }
+  .media-list-container {
+    display: grid;
+    place-content: center;
   }
 }
