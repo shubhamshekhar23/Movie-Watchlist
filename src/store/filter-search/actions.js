@@ -22,6 +22,7 @@ async function allMediaSearchAction(
     commit("global/updateLoading", false, { root: true });
   } catch (error) {
     /* use Mockdata if api not working */
+    alert("API has reached limit. Now using Mockdata");
     const { data } = movieResponseMockData;
     commit("global/updateMediaSearchResult", data, { root: true });
     commit("global/updateLoading", false, { root: true });
