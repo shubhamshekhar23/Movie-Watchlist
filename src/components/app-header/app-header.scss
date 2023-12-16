@@ -1,0 +1,23 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #141414;
+  h4 {
+    color: red;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

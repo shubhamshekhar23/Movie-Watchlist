@@ -14,7 +14,6 @@ import { mapGetters, mapMutations, mapActions } from "vuex";
 
 export default {
   name: "App",
-
   data: () => ({
     //
   }),
@@ -25,6 +24,9 @@ export default {
 </script>
 
 <style>
+body{
+  background-color: #141414;
+}
 #app{
   background-color: #141414;
   div,p{

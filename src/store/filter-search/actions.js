@@ -1,3 +1,4 @@
+import { movieResponseMockData } from "@/data/movie.mockdata";
 import axios from "axios";
 
 const api = axios.create({
@@ -19,7 +20,13 @@ async function allMediaSearchAction(
     });
     commit("global/updateMediaSearchResult", data.data, { root: true });
     commit("global/updateLoading", false, { root: true });
-  } catch (error) {}
+  } catch (error) {
+    /* use Mockdata if api not working */
+    const { data } = movieResponseMockData;
+    commit("global/updateMediaSearchResult", data, { root: true });
+    commit("global/updateLoading", false, { root: true });
+    console.warn(error);
+  }
 }
 
 async function movieSearchAction(

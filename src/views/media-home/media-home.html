@@ -1,13 +1,18 @@
 <section class="media-home">
-  <search-filter></search-filter>
-  <media-list></media-list>
-  <v-btn
-    class="show-watchlist-btn"
-    depressed
-    color="primary"
-    @click="showMyWatchList()"
-  >
-    Show My WatchList
-  </v-btn>
+  <app-header></app-header>
+  <div class="media-content">
+    <search-filter></search-filter>
+    <media-list></media-list>
+    <!-- <v-btn
+      class="show-watchlist-btn"
+      depressed
+      color="primary"
+      @click="showMyWatchList()"
+    >
+      Show My WatchList
+    </v-btn> -->
+  </div>
+
   <watchlist-dialog ref="dialog_reference"></watchlist-dialog>
+  <!-- <app-footer></app-footer> -->
 </section>
