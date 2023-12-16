@@ -30,34 +30,6 @@ async function allMediaSearchAction(
   }
 }
 
-async function movieSearchAction(
-  { commit, getters, dispatch, rootState },
-  payload
-) {
-  try {
-    commit("global/updateLoading", true, { root: true });
-    const { data } = await axios.get(
-      `${BASE_URL}/SearchMovie/${API_KEY}/${payload}`
-    );
-    commit("global/updateMediaSearchResult", data.results, { root: true });
-    commit("global/updateLoading", false, { root: true });
-  } catch (error) {}
-}
-
-async function tvSeriesSearchAction(
-  { commit, getters, dispatch, rootState },
-  payload
-) {
-  try {
-    commit("global/updateLoading", true, { root: true });
-    const { data } = await axios.get(
-      `${BASE_URL}/SearchSeries/${API_KEY}/${payload}`
-    );
-    commit("global/updateMediaSearchResult", data.results, { root: true });
-    commit("global/updateLoading", false, { root: true });
-  } catch (error) {}
-}
-
 async function sortByYearAction(
   { commit, getters, dispatch, rootState },
   payload

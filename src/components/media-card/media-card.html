@@ -1,39 +1,3 @@
-<!-- 
-<section class="media-card">
-  <v-card class="mx-auto" max-width="350">
-    <v-img class="white--text align-end" height="100%" :src="mediaInfo.image">
-      <v-card-title>{{mediaInfo.title}}</v-card-title>
-    </v-img>
-
-    <v-card-text class="text--primary">
-      <div><span>Title : </span>{{mediaInfo.title}}</div>
-      <div><span>Year : </span>{{mediaInfo.year}}</div>
-      <div><span>Stars : </span>{{mediaInfo.stars}}</div>
-      <div>{{mediaInfo.description}}</div>
-    </v-card-text>
-
-    <v-card-actions>
-      <v-btn
-        v-if="isAlreadyInWatchlist"
-        @click="doWatchListOrRemove()"
-        color="pink"
-        icon
-      >
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-      <v-btn
-        v-else
-        @click="doWatchListOrRemove()"
-        color="grey"
-        icon
-      >
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-      </v-btn>
-    </v-card-actions>
-  </v-card>
-</section> -->
-
 <section class="media-card">
   <div class="card-image">
     <img class="media-image" :src="mediaInfo.image" alt="Movie Image" />

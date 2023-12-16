@@ -44,6 +44,7 @@ npm run build
 - Create a header for showing my List instead of dialog, (refer netflix)
 - Add different nav menu like Week Top10, Popular movies, popular tv shows, Whats Streaming(prime, hulu etc.)
 - Refer all the public apis of <https://rapidapi.com/DataCrawler/api/imdb188/>
+- remove dependency on vuetify, add your own custom components
 
 ## Further features
 
