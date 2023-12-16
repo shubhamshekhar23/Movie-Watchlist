@@ -1,8 +1,8 @@
 <section class="media-home">
   <app-header></app-header>
   <div class="media-content">
-    <search-filter></search-filter>
-    <media-list></media-list>
+    <!-- <search-filter></search-filter> -->
+    <!-- <media-list></media-list> -->
     <!-- <v-btn
       class="show-watchlist-btn"
       depressed
@@ -11,6 +11,7 @@
     >
       Show My WatchList
     </v-btn> -->
+    <router-view></router-view>
   </div>
 
   <watchlist-dialog ref="dialog_reference"></watchlist-dialog>

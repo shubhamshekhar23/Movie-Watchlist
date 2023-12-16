@@ -1,22 +1,15 @@
+import SearchFilter from "@/components/search-filter";
 
 export default {
-  name: 'app-header',
-  components: {},
+  name: "app-header",
+  components: {
+    SearchFilter,
+  },
   props: [],
-  data () {
-    return {
-
-    }
+  data() {
+    return {};
   },
-  computed: {
-
-  },
-  mounted () {
-
-  },
-  methods: {
-
-  }
-}
-
-
+  computed: {},
+  mounted() {},
+  methods: {},
+};

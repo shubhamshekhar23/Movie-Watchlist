@@ -1,20 +1,30 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import MediaHome from "@/views/media-home";
-import WatchMediaList from "@/views/watch-media-list";
+import MediaList from "@/components/media-list";
+import WatchMediaList from "@/components/watch-media-list";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "media-home",
-    component: MediaHome,
+    redirect: "/home", // Redirect root to /home
   },
   {
-    path: "/my-list",
-    name: "my-list",
-    component: WatchMediaList,
+    path: "/home",
+    name: "media-home",
+    component: MediaHome,
+    children: [
+      {
+        path: "/",
+        component: MediaList,
+      },
+      {
+        path: "my-list",
+        component: WatchMediaList,
+      },
+    ],
   },
 ];
 
