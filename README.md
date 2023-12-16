@@ -39,6 +39,7 @@ npm run build
 
 ## Further immediate features
 
+- Debouncing and fetching result addition as user keeps on typing
 - Hide all the movie details from the movie card, Instead show them as a litlle zoomed when on hover (refer netflix)
 - Create a header for showing my List instead of dialog, (refer netflix)
 - Add different nav menu like Week Top10, Popular movies, popular tv shows, Whats Streaming(prime, hulu etc.)
