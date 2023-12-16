@@ -37,6 +37,13 @@ npm run build
 - User can add a particular movie in his watch list using heart Icon
 - After clicking on the my watch list button, user can see all of his watchlist in the dialogbox
 
+## Further immediate features
+
+- Hide all the movie details from the movie card, Instead show them as a litlle zoomed when on hover (refer netflix)
+- Create a header for showing my List instead of dialog, (refer netflix)
+- Add different nav menu like Week Top10, Popular movies, popular tv shows, Whats Streaming(prime, hulu etc.)
+- Refer all the public apis of <https://rapidapi.com/DataCrawler/api/imdb188/>
+
 ## Further features
 
 - Implementing signup and login feature for users
