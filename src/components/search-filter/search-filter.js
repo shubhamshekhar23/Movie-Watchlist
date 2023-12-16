@@ -17,7 +17,10 @@ export default {
       return this.mediaList && this.mediaList.length == 0;
     },
   },
-  mounted() {},
+  mounted() {
+    const INITIAL_SEARCH_TEXT = "2023";
+    this.allMediaSearchAction(INITIAL_SEARCH_TEXT);
+  },
   methods: {
     ...mapActions("filterSearch", [
       "allMediaSearchAction",

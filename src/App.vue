@@ -23,3 +23,13 @@ export default {
   },
 };
 </script>
+
+<style>
+#app{
+  background-color: #141414;
+  div,p{
+    color: white;
+  }
+
+}
+</style>

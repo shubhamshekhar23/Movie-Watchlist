@@ -1,3 +1,23 @@
 .media-card {
-  margin: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  p {
+    // color: white;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+  img {
+    height: 200px;
+    width: 300px;
+  }
+  .red-text {
+    color: red;
+  }
+  .grey-text {
+    color: gray;
+  }
 }
