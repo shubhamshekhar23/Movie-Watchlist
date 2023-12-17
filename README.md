@@ -10,7 +10,8 @@
 
 - Search field where user can search for movies and tv shows
 - After getting the result, user can sort using year released
-- User can add a particular movie in his watch list using favurites
+- when movie item is hovered, it zooms and displays additional info with favourite button, title year etc.
+- User can add a particular movie in his watch list using favurite button `favourite`
 - After clicking on the `My list` tab, user is bavigated to see his watchlist
 - It uses `https://rapidapi.com/DataCrawler/api/imdb188/` to make api calls
 
