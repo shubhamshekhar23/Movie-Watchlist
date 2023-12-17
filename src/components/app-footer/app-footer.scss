@@ -1,3 +1,45 @@
 .app-footer {
+  font-size: 12px;
+  .footer-container {
+    background-color: #141414;
+    color: #757575;
+    padding: 20px;
+    text-align: center;
+  }
 
+  .footer-links {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    place-items: start;
+    column-gap: 150px;
+    row-gap: 15px;
+    place-content: center;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+    color: #757575;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links a:hover {
+    color: white;
+  }
+
+  .footer-service {
+    margin-top: 20px;
+  }
+
+  .service-code {
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
 }
