@@ -22,27 +22,9 @@ export default {
     this.allMediaSearchAction(INITIAL_SEARCH_TEXT);
   },
   methods: {
-    ...mapActions("filterSearch", [
-      "allMediaSearchAction",
-      "movieSearchAction",
-      "tvSeriesSearchAction",
-      "sortByRatingAction",
-      "sortByYearAction",
-    ]),
+    ...mapActions("filterSearch", ["allMediaSearchAction", "sortByYearAction"]),
     searchMedia() {
-      switch (this.mediaType) {
-        case "All":
-          this.allMediaSearchAction(this.mediaSearchInput);
-          break;
-        case "Movies":
-          this.movieSearchAction(this.mediaSearchInput);
-          break;
-        case "Tv-Series":
-          this.tvSeriesSearchAction(this.mediaSearchInput);
-          break;
-        default:
-          break;
-      }
+      this.allMediaSearchAction(this.mediaSearchInput);
     },
     sortByYear() {
       if (!this.isMediaListEmpty) {

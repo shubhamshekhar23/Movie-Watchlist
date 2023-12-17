@@ -43,7 +43,5 @@ async function sortByYearAction(
 
 export default {
   allMediaSearchAction,
-  movieSearchAction,
-  tvSeriesSearchAction,
   sortByYearAction,
 };
