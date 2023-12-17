@@ -2,22 +2,48 @@
   color: white;
   display: flex;
   flex-direction: column;
-  p {
-    // color: white;
-    margin: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-width: 300px;
+  cursor: pointer;
+  border-radius: 5px;
+  max-height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .media-content {
+    padding: 10px 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    p {
+      margin: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      max-width: 300px;
+    }
+    .red-text {
+      color: red;
+    }
+    .grey-text {
+      color: gray;
+    }
+    display: none;
   }
+
   img {
     height: 200px;
     width: 300px;
+    border-radius: 5px 5px 0 0;
   }
-  .red-text {
-    color: red;
-  }
-  .grey-text {
-    color: gray;
+
+  &:hover {
+    transform: scale(1.3);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+    background-color: black;
+    z-index: 10;
+    .media-content {
+      display: flex;
+      box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.3);
+      background-color: black;
+      border-radius: 0 0 5px 5px;
+    }
   }
 }

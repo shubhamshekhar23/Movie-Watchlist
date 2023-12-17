@@ -1,21 +1,21 @@
 <section class="media-card">
-  <div class="card-image">
-    <img class="media-image" :src="mediaInfo.image" alt="Movie Image" />
-  </div>
+  <img class="media-image" :src="mediaInfo.image" alt="Movie Image" />
 
-  <div class="card-content text--primary">
-    <p><span>Title : </span>{{mediaInfo.title}}</p>
-    <p><span>Year : </span>{{mediaInfo.year}}</p>
-    <p><span>Stars : </span>{{mediaInfo.stars}}</p>
-    <div>{{mediaInfo.description}}</div>
-  </div>
+  <div class="media-content">
+    <div class="card-content text--primary">
+      <p><span>Title : </span>{{mediaInfo.title}}</p>
+      <p><span>Year : </span>{{mediaInfo.year}}</p>
+      <p><span>Stars : </span>{{mediaInfo.stars}}</p>
+      <div>{{mediaInfo.description}}</div>
+    </div>
 
-  <div class="card-action">
+    <!-- <div class="card-action"> -->
     <a @click="doWatchListOrRemove()">
       <i
         :class="{ 'red-text': isAlreadyInWatchlist, 'grey-text': !isAlreadyInWatchlist }"
         >favorite</i
       >
     </a>
+    <!-- </div> -->
   </div>
 </section>
