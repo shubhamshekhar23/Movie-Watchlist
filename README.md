@@ -1,4 +1,6 @@
-# media-watchlist
+# Media Search App : "MediaFlix" (Vue.js)
+
+![Project preview](docs/preview.gif)
 
 ## Project setup
 
