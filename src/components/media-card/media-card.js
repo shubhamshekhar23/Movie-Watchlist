@@ -10,7 +10,9 @@ export default {
   computed: {
     ...mapGetters("global", ["global", "watchList"]),
     isAlreadyInWatchlist() {
-      return this.watchList.find((item) => item.id === this.mediaInfo.id);
+      return this.watchList.find(
+        (item) => item.imdbID === this.mediaInfo.imdbID
+      );
     },
   },
   mounted() {},

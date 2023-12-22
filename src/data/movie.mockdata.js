@@ -1,87 +1,117 @@
 export const movieResponseMockData = {
-  status: true,
-  message: "Success",
-  timestamp: 1689187551887,
-  data: [
+  Search: [
     {
-      id: "tt9603212",
-      qid: "movie",
-      title: "Mission: Impossible - Dead Reckoning Part One",
-      year: 2023,
-      stars: "Tom Cruise, Hayley Atwell",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BY2VmZDhhNjgtNDcxYi00M2I3LThlMTQtMWRiNWI2Y2I4ZjRmXkEyXkFqcGdeQXVyMTMxMTIwMTE0._V1_.jpg",
+      Title: "Spaghetti (2023)",
+      Year: "2023",
+      imdbID: "tt17081088",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BODE2Zjc1MjctNmMwMC00YjVjLWE0ZTgtZmVhNTkyZTg1M2JmXkEyXkFqcGdeQXVyNTI2MDE4NDQ@._V1_SX300.jpg",
     },
     {
-      id: "tt0117060",
-      qid: "movie",
-      title: "Mission: Impossible",
-      year: 1996,
-      stars: "Tom Cruise, Jon Voight",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BMTc3NjI2MjU0Nl5BMl5BanBnXkFtZTgwNDk3ODYxMTE@._V1_.jpg",
+      Title: "The Peter Weyland Files: TED Conference, 2023",
+      Year: "2012",
+      imdbID: "tt5362760",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BYWZjOGFmMmQtYjBjNC00MDFkLWE1NDQtYTg4Y2Y0NzJiNTMyXkEyXkFqcGdeQXVyMjExMDE1MzQ@._V1_SX300.jpg",
     },
     {
-      id: "tt4912910",
-      qid: "movie",
-      title: "Mission: Impossible - Fallout",
-      year: 2018,
-      stars: "Tom Cruise, Henry Cavill",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BNjRlZmM0ODktY2RjNS00ZDdjLWJhZGYtNDljNWZkMGM5MTg0XkEyXkFqcGdeQXVyNjAwMjI5MDk@._V1_.jpg",
+      Title: "Eurovision Song Contest Liverpool 2023",
+      Year: "2023",
+      imdbID: "tt20243990",
+      Type: "series",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BZmVlMTY4NmMtYjcxOC00NWUxLWIyMzktN2E1MDhiN2JkZWExXkEyXkFqcGdeQXVyNjE1MjkwNw@@._V1_SX300.jpg",
     },
     {
-      id: "tt0120755",
-      qid: "movie",
-      title: "Mission: Impossible II",
-      year: 2000,
-      stars: "Tom Cruise, Dougray Scott",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BN2RkYWVkZDQtNTMxMi00NWQ4LWE2ODctNmQzOWM2NjQzYzdlXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_.jpg",
+      Title: "Recon 2023: The Gauda Prime Conspiracy",
+      Year: "2009",
+      imdbID: "tt1401674",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BMjI0MDc2NTUwMV5BMl5BanBnXkFtZTcwMzgzMjc5Mg@@._V1_SX300.jpg",
     },
     {
-      id: "tt0317919",
-      qid: "movie",
-      title: "Mission: Impossible III",
-      year: 2006,
-      stars: "Tom Cruise, Michelle Monaghan",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BOThhNTA1YjItYzk2Ny00M2Y1LWJlYWUtZDQyZDU0YmY5Y2M5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      Title: "A Prisoners Path Chicago 2023",
+      Year: "2023–",
+      imdbID: "tt28352407",
+      Type: "series",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BODE1NzIxODUtY2UyMy00YTFiLTg5ZDAtNzAyMTJlOGFjZjA4XkEyXkFqcGdeQXVyNTI2MDE4NDQ@._V1_SX300.jpg",
     },
     {
-      id: "tt2381249",
-      qid: "movie",
-      title: "Mission: Impossible - Rogue Nation",
-      year: 2015,
-      stars: "Tom Cruise, Rebecca Ferguson",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BOTFmNDA3ZjMtN2Y0MC00NDYyLWFlY2UtNTQ4OTQxMmY1NmVjXkEyXkFqcGdeQXVyNTg4NDQ4NDY@._V1_.jpg",
+      Title: "Quito 2023",
+      Year: "2013",
+      imdbID: "tt2527560",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BMzQ4NTkzNzQ5MV5BMl5BanBnXkFtZTgwNzkxNjUwMTE@._V1_SX300.jpg",
     },
     {
-      id: "tt1229238",
-      qid: "movie",
-      title: "Mission: Impossible - Ghost Protocol",
-      year: 2011,
-      stars: "Tom Cruise, Jeremy Renner",
-      q: "feature",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BMTY4MTUxMjQ5OV5BMl5BanBnXkFtZTcwNTUyMzg5Ng@@._V1_.jpg",
+      Title: "Etheria Film Night 2023",
+      Year: "2023",
+      imdbID: "tt28267808",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BMjEwZTkyY2EtYzFiZS00NTZlLTk0YmMtNWMzOThiZDM3MjJjXkEyXkFqcGdeQXVyMTAzOTA4NjM@._V1_SX300.jpg",
     },
     {
-      id: "tt0060009",
-      qid: "tvSeries",
-      title: "Mission: Impossible",
-      year: 1966,
-      stars: "Peter Graves, Barbara Bain",
-      q: "TV series",
-      image:
-        "https://m.media-amazon.com/images/M/MV5BMTg3MDQ4ODQwNF5BMl5BanBnXkFtZTcwODMwODM0MQ@@._V1_.jpg",
+      Title: "2023 MTV Video Music Awards",
+      Year: "2023",
+      imdbID: "tt27837266",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BODcxYTg5NmItMmI3My00NjExLTk0MGEtYTU3YTFkZGFhY2I4XkEyXkFqcGdeQXVyNDA1OTM4MjM@._V1_SX300.jpg",
+    },
+    {
+      Title: "2023 CMT Music Awards",
+      Year: "2023",
+      imdbID: "tt23219702",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BMjAyOTBkZGQtNDllZS00OWFkLWJmZGUtZWFkNTJhY2E2NzUwXkEyXkFqcGdeQXVyMTU4MzQzNDkx._V1_SX300.jpg",
+    },
+    {
+      Title: "2023 Oscar Nominated Short Films: Live Action",
+      Year: "2023",
+      imdbID: "tt26687422",
+      Type: "movie",
+      Poster:
+        "https://m.media-amazon.com/images/M/MV5BY2E4YjczZDktZGYyMS00ZTZhLTgwYTEtNjljOGM3ZDU3N2I0XkEyXkFqcGdeQXVyMzQ5NzYxNzI@._V1_SX300.jpg",
     },
   ],
+  totalResults: "352",
+  Response: "True",
+};
+
+export const movieItemResponseData = {
+  Title: "Matrix",
+  Year: "1993",
+  Rated: "N/A",
+  Released: "01 Mar 1993",
+  Runtime: "60 min",
+  Genre: "Action, Drama, Fantasy",
+  Director: "N/A",
+  Writer: "Grenville Case",
+  Actors: "Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss",
+  Plot: 'Steven Matrix is one of the underworld\'s foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds himself in "The City In Between", where he is ...',
+  Language: "English",
+  Country: "Canada",
+  Awards: "1 win",
+  Poster:
+    "https://m.media-amazon.com/images/M/MV5BYzUzOTA5ZTMtMTdlZS00MmQ5LWFmNjEtMjE5MTczN2RjNjE3XkEyXkFqcGdeQXVyNTc2ODIyMzY@._V1_SX300.jpg",
+  Ratings: [
+    {
+      Source: "Internet Movie Database",
+      Value: "7.8/10",
+    },
+  ],
+  Metascore: "N/A",
+  imdbRating: "7.8",
+  imdbVotes: "205",
+  imdbID: "tt0106062",
+  Type: "series",
+  totalSeasons: "N/A",
+  Response: "True",
 };

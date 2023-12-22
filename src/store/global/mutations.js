@@ -10,13 +10,13 @@ function addToWatchList(state, data) {
 }
 
 function removeFromWatchList(state, data) {
-  let index = state.watchList.findIndex((c) => c.id == data.id);
+  let index = state.watchList.findIndex((c) => c.imdbID == data.imdbID);
   state.watchList.splice(index, 1);
 }
 
 function updateMediaListByYear(state, data) {
   state.mediaSearchResult.sort(function (a, b) {
-    return a.year > b.year ? -1 : 1;
+    return a.Year > b.Year ? -1 : 1;
   });
 }
 
