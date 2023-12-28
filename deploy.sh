@@ -10,4 +10,4 @@ git add dist -f
 git commit -am "deploying changes"
 
 # Push to gh-pages branch using git subtree
-git subtree push --prefix dist origin gh-pages --force
+git subtree push -f --prefix dist origin gh-pages 
