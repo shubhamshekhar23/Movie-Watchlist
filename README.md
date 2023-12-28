@@ -1,5 +1,7 @@
 # Media Search App : "MediaFlix" (Vue.js)
 
+- `Live` : <https://shubhamshekhar23.github.io/Movie-Watchlist-Vue/>
+
 ![Project preview](docs/preview.gif)
 
 ## Project setup
